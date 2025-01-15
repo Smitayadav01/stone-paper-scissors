@@ -9,8 +9,8 @@ const compScorePara = document.querySelector("#comp-score");
 
 const genCompChoice= ()=>{
 // stone, paper, scissor
-const options=["stone","paper","scissor"];   // array humne isliye banaya kyuki Math.random sirf number print karta hai naa ki strings isiliye humne array banaya kyuki usse hum arr ka index access kar sakte hai lekin Math.random sirf 0 to 1 ke range mai print karta hai toh uskeliye hume kuch karna padega  
-const randIdx=Math.floor(Math.random() * 3);                       // Math.random - ye koi bhi random number print karta hai 
+const options=["stone","paper","scissor"];   
+const randIdx=Math.floor(Math.random() * 3);                        
 return options[randIdx];
 };
 
@@ -75,8 +75,6 @@ choices.forEach((choice)=>[
 
 
 
-// Math.floor se decimel number hatt jata hai aur simple whole number print hota hai 
-// syntax : Math.floor(Math.random())
 
 
 //  Math.random mai --- 0 to 2 ke beech mai number chahiye toh hum usko 3 se multiply karte hai
